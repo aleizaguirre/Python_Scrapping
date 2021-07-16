@@ -1,0 +1,47 @@
+
+\documentclass[11pt,spanish]{article}
+\usepackage[T1]{fontenc}
+\usepackage{selinput}
+\SelectInputMappings{%
+  aacute={á},
+  ntilde={ñ},
+}
+%%\usepackage[latin9]{inputenc}
+
+\usepackage{array}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{graphicx} 
+
+\title{Ejercicios Python Scrapping} 
+
+\date{\vspace{-5ex}}
+
+\begin{document}
+\maketitle
+
+
+\newpage
+\section{Precipitaciones Vs. Incidents}
+Los siguientes plots muestran la relación entre cuatro tipos de incidentes (acumulados mensualmente durante 2015) y las precipitaciones mensuales acumuladas durante el mismo año para cada uno de los condados de Maryland. La linea de ajuste corresponde a un modelo lineal simple.
+\begin{table}[H]
+ \centering
+ \caption{Incidents Vs. Precip. Acum.}
+\begin{tabular}{c}
+\includegraphics[scale=1]{Plots_incident_precip.pdf}
+\end{tabular}
+\end{table}
+
+\newpage
+\section{Black Vs. Incidents}
+
+Los siguientes plots muestran la relación entre cuatro tipos de incidentes (acumulados durante 2015) y la proporción de población negra para cada uno de los condados de Maryland. La linea de ajuste corresponde a un modelo lineal simple.
+\begin{table}[H]
+ \centering
+ \caption{Incidents Vs. Precip. Acum.}
+\begin{tabular}{c}
+\includegraphics[scale=1]{Plot_incident_black.pdf}
+\end{tabular}
+\end{table}
+
+\end{document}
